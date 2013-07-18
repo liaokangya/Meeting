@@ -33,7 +33,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     // Fetch Meetings
-    [self fetchMeetings];
+    [self fetchSortedMeetings];
     // Reload Table View
     [self.tableVIew reloadData];
 }
@@ -45,7 +45,7 @@
 
 - (void)fetchSortedMeetings {
     // Fetch Sorted Meetings
-    self.meetings = [NSMutableArray arrayWithArray:[Meeting findAllSortedBy:@"date" ascending:YES]];
+    self.meetings = [NSMutableArray arrayWithArray:[Meeting findAllSortedBy:@"name" ascending:YES]];
 }
 
 - (void)fetchMeetingsByAttribute:(NSString *)attribute withValue:(id)value {
@@ -112,10 +112,6 @@
         AddMeetingViewController *editMeeting = (AddMeetingViewController *)segue.destinationViewController;
         editMeeting.meeting = self.meeting;
     }
-//    } else if ([segue.identifier isEqualToString:@"AddMeeting"]) {
-//        AddMeetingViewController *addMeeting = (AddMeetingViewController *)segue.destinationViewController;
-//        addMeeting
-//    }
 }
 
 @end

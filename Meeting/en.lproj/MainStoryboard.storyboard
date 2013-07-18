@@ -142,6 +142,7 @@
                     <connections>
                         <outlet property="cancelButton" destination="u0X-7z-UEU" id="iIt-jK-fLj"/>
                         <outlet property="contentField" destination="IFr-4o-uKr" id="zx8-kW-75i"/>
+                        <outlet property="departmentField" destination="qKs-hg-Qhx" id="vIY-8p-Djw"/>
                         <outlet property="doneButton" destination="poj-e4-hP5" id="Uh8-Sf-wfV"/>
                         <outlet property="nameField" destination="VOw-1b-mfY" id="pVV-B2-hmb"/>
                         <outlet property="positionField" destination="TfE-U1-Jok" id="72K-CF-mZ6"/>
