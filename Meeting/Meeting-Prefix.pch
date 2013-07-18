@@ -11,4 +11,9 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    //To remove MR_ from code
+    #define MR_SHORTHAND
+    //To stop logging
+    #define MR_ENABLE_ACTIVE_RECORD_LOGGING 0  
+    #import "CoreData+MagicalRecord.h"
 #endif
