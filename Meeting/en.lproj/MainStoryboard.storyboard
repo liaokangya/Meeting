@@ -150,37 +150,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9i-fF-eJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2849" y="-139"/>
-        </scene>
-        <!--Table View Controller - Sort-->
-        <scene sceneID="kKp-U4-QJi">
-            <objects>
-                <tableViewController id="UAy-FO-i7Q" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DEm-Lj-WWa">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="OSi-FK-gMJ">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="UAy-FO-i7Q" id="OzO-pv-9x4"/>
-                            <outlet property="delegate" destination="UAy-FO-i7Q" id="ThD-Oi-HjD"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Sort" id="PzZ-nW-7Th"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9iu-wt-6yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="726" y="-454"/>
+            <point key="canvasLocation" x="3375" y="-139"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="l7H-rj-LBg">
@@ -194,7 +164,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="CrA-fR-79Y" kind="relationship" relationship="viewControllers" id="WTi-Z2-iVQ"/>
-                        <segue destination="UAy-FO-i7Q" kind="relationship" relationship="viewControllers" id="lPS-hB-WBr"/>
+                        <segue destination="IDS-Se-GYn" kind="relationship" relationship="viewControllers" id="OlZ-PG-zxR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4qL-Gf-063" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -415,7 +385,56 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hW-WW-GOw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2323" y="-139"/>
+            <point key="canvasLocation" x="2849" y="-139"/>
+        </scene>
+        <!--View Controller - Sort Meetings-->
+        <scene sceneID="3Nl-3g-fBy">
+            <objects>
+                <viewController id="w8N-CW-ktz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k9Y-pu-Kq7">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lMo-47-drb">
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VdU-QV-Iqz">
+                                <segments>
+                                    <segment title="Name"/>
+                                    <segment title="Department"/>
+                                    <segment title="Date"/>
+                                </segments>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="a1R-l2-nmn">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="357" id="N6u-CR-wSd"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lMo-47-drb" firstAttribute="leading" secondItem="k9Y-pu-Kq7" secondAttribute="leading" type="default" id="5KR-wN-gEX"/>
+                            <constraint firstItem="VdU-QV-Iqz" firstAttribute="top" secondItem="k9Y-pu-Kq7" secondAttribute="top" constant="50" id="7iH-IF-ssn"/>
+                            <constraint firstAttribute="trailing" secondItem="a1R-l2-nmn" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="AZd-2z-SY9"/>
+                            <constraint firstItem="VdU-QV-Iqz" firstAttribute="leading" secondItem="k9Y-pu-Kq7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PAZ-6A-a2E"/>
+                            <constraint firstItem="a1R-l2-nmn" firstAttribute="top" secondItem="VdU-QV-Iqz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SVZ-cG-EuR"/>
+                            <constraint firstItem="lMo-47-drb" firstAttribute="top" secondItem="k9Y-pu-Kq7" secondAttribute="top" type="default" id="VUc-E2-Mei"/>
+                            <constraint firstItem="a1R-l2-nmn" firstAttribute="leading" secondItem="k9Y-pu-Kq7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="iwd-1r-qOz"/>
+                            <constraint firstItem="lMo-47-drb" firstAttribute="trailing" secondItem="k9Y-pu-Kq7" secondAttribute="trailing" type="default" id="mza-6o-roR"/>
+                            <constraint firstAttribute="trailing" secondItem="VdU-QV-Iqz" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="nsI-Pf-ggF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sort Meetings" id="NKo-Wt-uwY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IJE-di-BVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="hlH-vQ-MDW">
+                    <connections>
+                        <outlet property="delegate" destination="w8N-CW-ktz" id="fCx-p3-QtB"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1279" y="-629"/>
         </scene>
         <!--Navigation Controller - Main-->
         <scene sceneID="uPt-St-gNN">
@@ -435,6 +454,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXs-X3-dMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="935" y="271"/>
+        </scene>
+        <!--Navigation Controller - Sort-->
+        <scene sceneID="a8n-r6-0H8">
+            <objects>
+                <navigationController id="IDS-Se-GYn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sort" id="eva-hm-BW7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V0e-pP-cbC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="w8N-CW-ktz" kind="relationship" relationship="rootViewController" id="uoQ-pV-Goa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dv-m9-Bhj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="-629"/>
         </scene>
     </scenes>
     <classes>
