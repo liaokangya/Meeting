@@ -48,6 +48,7 @@
 		5627AFA917978FEA00E4ACFC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5627AFA717978FEA00E4ACFC /* Model.xcdatamodeld */; };
 		5627AFB5179793FA00E4ACFC /* AddMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5627AFB4179793FA00E4ACFC /* AddMeetingViewController.m */; };
 		5627AFB81797A41D00E4ACFC /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5627AFB71797A41D00E4ACFC /* Meeting.m */; };
+		56E45C49179CBB61004597DF /* SortMeetingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E45C48179CBB61004597DF /* SortMeetingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +128,8 @@
 		5627AFB4179793FA00E4ACFC /* AddMeetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMeetingViewController.m; sourceTree = "<group>"; };
 		5627AFB61797A41D00E4ACFC /* Meeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meeting.h; sourceTree = "<group>"; };
 		5627AFB71797A41D00E4ACFC /* Meeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meeting.m; sourceTree = "<group>"; };
+		56E45C47179CBB61004597DF /* SortMeetingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortMeetingsViewController.h; sourceTree = "<group>"; };
+		56E45C48179CBB61004597DF /* SortMeetingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortMeetingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,8 @@
 				5627AFB4179793FA00E4ACFC /* AddMeetingViewController.m */,
 				5627AFB61797A41D00E4ACFC /* Meeting.h */,
 				5627AFB71797A41D00E4ACFC /* Meeting.m */,
+				56E45C47179CBB61004597DF /* SortMeetingsViewController.h */,
+				56E45C48179CBB61004597DF /* SortMeetingsViewController.m */,
 			);
 			path = Meeting;
 			sourceTree = "<group>";
@@ -405,6 +410,7 @@
 				5627AFA917978FEA00E4ACFC /* Model.xcdatamodeld in Sources */,
 				5627AFB5179793FA00E4ACFC /* AddMeetingViewController.m in Sources */,
 				5627AFB81797A41D00E4ACFC /* Meeting.m in Sources */,
+				56E45C49179CBB61004597DF /* SortMeetingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
