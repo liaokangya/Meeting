@@ -427,7 +427,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
-                                            <segue destination="RsV-Uc-Zqr" kind="push" id="Hd5-av-af2"/>
+                                            <segue destination="RsV-Uc-Zqr" kind="push" identifier="EditMeeting" id="Hd5-av-af2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -544,6 +544,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fZs-s3-pjQ"/>
+        <segue reference="Hd5-av-af2"/>
     </inferredMetricsTieBreakers>
 </document>
