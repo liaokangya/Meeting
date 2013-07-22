@@ -29,6 +29,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textfieldReturn:" destination="P5c-l2-Gbg" eventType="editingDidEndOnExit" id="UOn-Nc-ji6"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -56,6 +59,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textfieldReturn:" destination="P5c-l2-Gbg" eventType="editingDidEndOnExit" id="QTb-IS-889"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -83,6 +89,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textfieldReturn:" destination="P5c-l2-Gbg" eventType="editingDidEndOnExit" id="2ZG-m7-O39"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -110,6 +119,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textfieldReturn:" destination="P5c-l2-Gbg" eventType="editingDidEndOnExit" id="AFp-j0-5MX"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -256,6 +268,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textfieldReturn:" destination="RsV-Uc-Zqr" eventType="editingDidEndOnExit" id="2Po-X4-eCC"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -283,6 +298,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textfieldReturn:" destination="RsV-Uc-Zqr" eventType="editingDidEndOnExit" id="VQH-p3-EOq"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -310,6 +328,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textfieldReturn:" destination="RsV-Uc-Zqr" eventType="editingDidEndOnExit" id="TGX-UC-s96"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -337,6 +358,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textfieldReturn:" destination="RsV-Uc-Zqr" eventType="editingDidEndOnExit" id="0en-li-tRt"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -395,7 +419,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lMo-47-drb">
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="lMo-47-drb">
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VdU-QV-Iqz">
@@ -451,6 +475,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sort Meetings" id="NKo-Wt-uwY"/>
                     <connections>
+                        <outlet property="searchField" destination="lMo-47-drb" id="aO4-jQ-rLx"/>
                         <outlet property="segmentController" destination="VdU-QV-Iqz" id="TR7-PF-FjS"/>
                         <outlet property="tableView" destination="a1R-l2-nmn" id="Xx6-3y-gfl"/>
                     </connections>
@@ -507,8 +532,10 @@
         <class className="AddMeetingViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AddMeetingViewController.h"/>
             <relationships>
+                <relationship kind="action" name="backgroundTouched:"/>
                 <relationship kind="action" name="cancelButtonClicked:"/>
                 <relationship kind="action" name="doneButtonClicked:"/>
+                <relationship kind="action" name="textfieldReturn:"/>
                 <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="contentField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="departmentField" candidateClass="UITextField"/>
@@ -523,7 +550,10 @@
         <class className="SortMeetingsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SortMeetingsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="backgroundTouched:"/>
                 <relationship kind="action" name="segmentButton:"/>
+                <relationship kind="action" name="textfieldReturn:"/>
+                <relationship kind="outlet" name="searchField" candidateClass="UISearchBar"/>
                 <relationship kind="outlet" name="segmentController" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>

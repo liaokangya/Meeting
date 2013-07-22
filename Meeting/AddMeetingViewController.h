@@ -25,4 +25,7 @@
 - (IBAction)cancelButtonClicked:(id)sender;
 - (IBAction)doneButtonClicked:(id)sender;
 
+- (IBAction)backgroundTouched:(id)sender;
+- (IBAction)textfieldReturn:(id)sender;
+
 @end

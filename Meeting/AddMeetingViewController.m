@@ -15,6 +15,21 @@
 @end
 
 @implementation AddMeetingViewController
+@synthesize nameField = _nameField;
+@synthesize positionField = _positionField;
+@synthesize departmentField = _departmentField;
+@synthesize contentField = _contentField;
+
+
+- (IBAction)backgroundTouched:(id)sender {
+    [_nameField resignFirstResponder];
+    [_positionField resignFirstResponder];
+    [_departmentField resignFirstResponder];
+    [_contentField resignFirstResponder];
+}
+- (IBAction)textfieldReturn:(id)sender {
+    [sender resignFirstResponder];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

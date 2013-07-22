@@ -13,6 +13,7 @@
 }
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UISearchBar *searchField;
 
 -(IBAction)segmentButton:(id)sender;
 

@@ -64,6 +64,7 @@
     }  else if (segmentController.selectedSegmentIndex == 3) {
         self.meetings = [NSMutableArray arrayWithArray:[Meeting findAllSortedBy:@"department" ascending:NO]];
     }
+    
 }
 
 - (void)fetchMeetingsByAttribute:(NSString *)attribute withValue:(id)value {
